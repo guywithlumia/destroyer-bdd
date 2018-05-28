@@ -13,12 +13,15 @@ namespace destroyer_bdd
 
         public void AddFile(string path)
         {
-
+            if (File.Exists(path))
+            {
+                files.Add(path);
+            }
         }
 
         public int FileCount()
         {
-            return 0;
+            return files.Count;
         }
     }
 

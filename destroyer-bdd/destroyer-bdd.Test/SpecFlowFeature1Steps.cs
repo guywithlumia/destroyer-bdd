@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
-using destroyer_bdd;
 
 namespace destroyer_bdd.Test
 {
@@ -13,8 +11,6 @@ namespace destroyer_bdd.Test
         [Given(@"I have my destroyer")]
         public void GivenIHaveMyDestroyer()
         {
-            ScenarioContext.Current.Pending();
-
             Assert.IsNotNull(dest);
         }
         

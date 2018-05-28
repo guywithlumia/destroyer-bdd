@@ -80,6 +80,12 @@
       <LastGenOutput>SpecFlowFeature1.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\destroyer-bdd\destroyer-bdd.csproj">
+      <Project>{CCF32E79-034A-442C-81B3-2EBEE5CAD202}</Project>
+      <Name>destroyer-bdd</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

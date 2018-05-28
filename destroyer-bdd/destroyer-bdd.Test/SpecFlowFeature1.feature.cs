@@ -221,8 +221,10 @@ testRunner.Given("I have my destroyer", ((string)(null)), ((TechTalk.SpecFlow.Ta
 #line 42
 testRunner.When(string.Format("I add new file path {0}", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 43
-testRunner.And("I trash new file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("I make copy file {0}", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 44
+testRunner.And("I trash new file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 45
 testRunner.Then(string.Format("File {0} not equal original", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

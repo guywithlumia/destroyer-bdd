@@ -14,6 +14,7 @@ namespace destroyer_bdd.Test
         public void GivenIHaveMyDestroyer()
         {
             Assert.IsNotNull(dest);
+            dest.ClearFiles();
         }
 
         [When(@"I add new file path ""(.*)""")]
@@ -46,16 +47,24 @@ namespace destroyer_bdd.Test
             dest.DeleteFiles();
         }
 
+        [When(@"I make copy file ""(.*)""")]
+        public void WhenIMakeCopyFile(string p0)
+        {
+            File.Copy(p0, p0 + ".orig");
+        }
+
         [When(@"I trash new file")]
         public void WhenITrashNewFile()
         {
-            ScenarioContext.Current.Pending();
+            dest.TrashFile();
         }
 
         [Then(@"File ""(.*)"" not equal original")]
         public void ThenFileNotEqualOriginal(string p0)
         {
-            ScenarioContext.Current.Pending();
+            var orig = File.ReadAllBytes(p0+".orig");
+            var trash = File.ReadAllBytes(p0);
+            Assert.AreNotEqual(orig, trash);
         }
 
     }

@@ -11,6 +11,8 @@ namespace destroyer_bdd
     {
         List<string> files = new List<string>();
 
+        public void ClearFiles() { files.Clear(); }
+
         public void AddFile(string path)
         {
             if (File.Exists(path))
@@ -40,6 +42,11 @@ namespace destroyer_bdd
                 File.Delete(files[i]);
                 files.RemoveAt(i);
             }
+        }
+
+        public void TrashFile()
+        {
+            
         }
     }
 

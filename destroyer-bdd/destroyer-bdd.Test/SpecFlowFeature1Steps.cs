@@ -17,7 +17,8 @@ namespace destroyer_bdd.Test
         [When(@"I add new file path ""(.*)""")]
         public void WhenIAddNewFilePath(string p0)
         {
-            ScenarioContext.Current.Pending();
+            dest.AddFile(p0);
+            Assert.AreEqual(1, dest.FileCount());
         }
         
         [Then(@"File count is (.*)")]

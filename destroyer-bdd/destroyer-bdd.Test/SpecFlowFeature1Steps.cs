@@ -32,5 +32,12 @@ namespace destroyer_bdd.Test
         {
             dest.DeleteFirstFile();
         }
+
+        [Then(@"File ""(.*)"" exists is (.*)")]
+        public void ThenFileExistsIs(string p0, int p1)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }

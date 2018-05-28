@@ -40,6 +40,7 @@ And File <filePath2> non exists
 Scenario Outline: Trash File
 Given I have my destroyer
 When I add new file path <filePath>
+And I make copy file <filePath>
 And I trash new file
 Then File <filePath> not equal original
 		Examples: 

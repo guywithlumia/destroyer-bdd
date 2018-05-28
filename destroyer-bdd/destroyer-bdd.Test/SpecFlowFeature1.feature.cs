@@ -98,26 +98,53 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add new file: \"f:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add new file: \"d:\\test1.txt\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"f:\\test1.txt\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"f:\\test1.txt\"")]
-        public virtual void AddNewFile_FTest1_Txt()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test1.txt\"")]
+        public virtual void AddNewFile_DTest1_Txt()
         {
 #line 3
-this.AddNewFile("\"f:\\test1.txt\"", ((string[])(null)));
+this.AddNewFile("\"d:\\test1.txt\"", ((string[])(null)));
 #line hidden
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add new file: \"f:\\test2.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add new file: \"d:\\test2.txt\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"f:\\test2.txt\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"f:\\test2.txt\"")]
-        public virtual void AddNewFile_FTest2_Txt()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test2.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test2.txt\"")]
+        public virtual void AddNewFile_DTest2_Txt()
         {
 #line 3
-this.AddNewFile("\"f:\\test2.txt\"", ((string[])(null)));
+this.AddNewFile("\"d:\\test2.txt\"", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void FileNotExists(string filePath, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("File not exists", exampleTags);
+#line 12
+this.ScenarioSetup(scenarioInfo);
+#line 13
+ testRunner.Given("I have my destroyer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 14
+ testRunner.When(string.Format("I add new file path {0}", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 15
+ testRunner.Then("File count is 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("File not exists: \"d:\\test3.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test3.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test3.txt\"")]
+        public virtual void FileNotExists_DTest3_Txt()
+        {
+#line 12
+this.FileNotExists("\"d:\\test3.txt\"", ((string[])(null)));
 #line hidden
         }
     }

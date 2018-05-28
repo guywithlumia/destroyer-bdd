@@ -24,7 +24,7 @@ namespace destroyer_bdd.Test
         [Then(@"File count is (.*)")]
         public void ThenFileCountIs(int p0)
         {
-            Assert.AreEqual(1, dest.FileCount());
+            Assert.AreEqual(p0, dest.FileCount());
         }
     }
 }

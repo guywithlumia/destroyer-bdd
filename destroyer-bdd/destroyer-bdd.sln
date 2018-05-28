@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "destroyer-bdd", "destroyer-bdd\destroyer-bdd.csproj", "{CCF32E79-034A-442C-81B3-2EBEE5CAD202}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "destroyer-bdd.Test", "destroyer-bdd.Test\destroyer-bdd.Test.csproj", "{68FF4548-83C0-4D80-ADA5-CBDDFC3AFFF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CCF32E79-034A-442C-81B3-2EBEE5CAD202}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF32E79-034A-442C-81B3-2EBEE5CAD202}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF32E79-034A-442C-81B3-2EBEE5CAD202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FF4548-83C0-4D80-ADA5-CBDDFC3AFFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FF4548-83C0-4D80-ADA5-CBDDFC3AFFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FF4548-83C0-4D80-ADA5-CBDDFC3AFFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FF4548-83C0-4D80-ADA5-CBDDFC3AFFF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

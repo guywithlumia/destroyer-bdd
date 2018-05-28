@@ -43,7 +43,7 @@ namespace destroyer_bdd.Test
         [When(@"I delete new files")]
         public void WhenIDeleteNewFiles()
         {
-            ScenarioContext.Current.Pending();
+            dest.DeleteFiles();
         }
 
     }

@@ -32,6 +32,11 @@ namespace destroyer_bdd
                 files.RemoveAt(0);
             }
         }
+
+        public void DeleteFiles()
+        {
+            
+        }
     }
 
     class Program

@@ -40,5 +40,11 @@ namespace destroyer_bdd.Test
             Assert.AreEqual(false, File.Exists(p0));
         }
 
+        [When(@"I delete new files")]
+        public void WhenIDeleteNewFiles()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }

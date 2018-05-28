@@ -25,3 +25,14 @@ Then File <filePath> non exists
 		Examples: 
 		| filePath |
 		| "d:\test1.txt"|
+
+Scenario Outline: Destroy Files
+Given I have my destroyer
+When I add new file path <filePath1>
+And I add new file path <filePath2>
+And I delete new files
+Then File <filePath1> non exists
+And File <filePath2> non exists
+		Examples: 
+		| filePath1 | filePath2 |
+		| "d:\test1.txt"| "d:\test2.txt"|

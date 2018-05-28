@@ -176,6 +176,40 @@ testRunner.Then(string.Format("File {0} non exists", filePath), ((string)(null))
 this.DestroyFile("\"d:\\test1.txt\"", ((string[])(null)));
 #line hidden
         }
+        
+        public virtual void DestroyFiles(string filePath1, string filePath2, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Destroy Files", exampleTags);
+#line 29
+this.ScenarioSetup(scenarioInfo);
+#line 30
+testRunner.Given("I have my destroyer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 31
+testRunner.When(string.Format("I add new file path {0}", filePath1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 32
+testRunner.And(string.Format("I add new file path {0}", filePath2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 33
+testRunner.And("I delete new files", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 34
+testRunner.Then(string.Format("File {0} non exists", filePath1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 35
+testRunner.And(string.Format("File {0} non exists", filePath2), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Destroy Files: \"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath1", "\"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath2", "\"d:\\test2.txt\"")]
+        public virtual void DestroyFiles_DTest1_Txt()
+        {
+#line 29
+this.DestroyFiles("\"d:\\test1.txt\"", "\"d:\\test2.txt\"", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore

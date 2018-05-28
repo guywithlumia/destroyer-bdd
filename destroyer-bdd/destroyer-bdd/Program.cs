@@ -35,7 +35,11 @@ namespace destroyer_bdd
 
         public void DeleteFiles()
         {
-            
+            for (int i = files.Count - 1; i >= 0; i--)
+            {
+                File.Delete(files[i]);
+                files.RemoveAt(i);
+            }
         }
     }
 

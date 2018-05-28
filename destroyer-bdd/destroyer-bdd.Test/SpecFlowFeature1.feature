@@ -35,4 +35,4 @@ Then File <filePath1> non exists
 And File <filePath2> non exists
 		Examples: 
 		| filePath1 | filePath2 |
-		| "d:\test1.txt"| "d:\test2.txt"|
+		| "d:\test4.txt"| "d:\test5.txt"|

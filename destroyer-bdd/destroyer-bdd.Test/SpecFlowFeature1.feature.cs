@@ -199,15 +199,15 @@ testRunner.And(string.Format("File {0} non exists", filePath2), ((string)(null))
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Destroy Files: \"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Destroy Files: \"d:\\test4.txt\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test1.txt\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath1", "\"d:\\test1.txt\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath2", "\"d:\\test2.txt\"")]
-        public virtual void DestroyFiles_DTest1_Txt()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test4.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath1", "\"d:\\test4.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath2", "\"d:\\test5.txt\"")]
+        public virtual void DestroyFiles_DTest4_Txt()
         {
 #line 29
-this.DestroyFiles("\"d:\\test1.txt\"", "\"d:\\test2.txt\"", ((string[])(null)));
+this.DestroyFiles("\"d:\\test4.txt\"", "\"d:\\test5.txt\"", ((string[])(null)));
 #line hidden
         }
     }

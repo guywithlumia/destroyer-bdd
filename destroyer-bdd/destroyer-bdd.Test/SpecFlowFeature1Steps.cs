@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using TechTalk.SpecFlow;
 
 namespace destroyer_bdd.Test
@@ -18,7 +19,6 @@ namespace destroyer_bdd.Test
         public void WhenIAddNewFilePath(string p0)
         {
             dest.AddFile(p0);
-            
         }
         
         [Then(@"File count is (.*)")]

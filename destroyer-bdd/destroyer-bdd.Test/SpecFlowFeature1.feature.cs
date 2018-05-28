@@ -210,6 +210,35 @@ testRunner.And(string.Format("File {0} non exists", filePath2), ((string)(null))
 this.DestroyFiles("\"d:\\test4.txt\"", "\"d:\\test5.txt\"", ((string[])(null)));
 #line hidden
         }
+        
+        public virtual void TrashFile(string filePath, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Trash File", exampleTags);
+#line 40
+this.ScenarioSetup(scenarioInfo);
+#line 41
+testRunner.Given("I have my destroyer", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 42
+testRunner.When(string.Format("I add new file path {0}", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 43
+testRunner.And("I trash new file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 44
+testRunner.Then(string.Format("File {0} not equal original", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Trash File: \"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test1.txt\"")]
+        public virtual void TrashFile_DTest1_Txt()
+        {
+#line 40
+this.TrashFile("\"d:\\test1.txt\"", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore

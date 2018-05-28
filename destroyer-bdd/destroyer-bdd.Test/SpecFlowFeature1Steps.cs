@@ -46,5 +46,17 @@ namespace destroyer_bdd.Test
             dest.DeleteFiles();
         }
 
+        [When(@"I trash new file")]
+        public void WhenITrashNewFile()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"File ""(.*)"" not equal original")]
+        public void ThenFileNotEqualOriginal(string p0)
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }

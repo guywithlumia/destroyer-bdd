@@ -36,3 +36,12 @@ And File <filePath2> non exists
 		Examples: 
 		| filePath1 | filePath2 |
 		| "d:\test4.txt"| "d:\test5.txt"|
+
+Scenario Outline: Trash File
+Given I have my destroyer
+When I add new file path <filePath>
+And I trash new file
+Then File <filePath> not equal original
+		Examples: 
+		| filePath |
+		| "d:\test1.txt"|

@@ -26,5 +26,18 @@ namespace destroyer_bdd.Test
         {
             Assert.AreEqual(p0, dest.FileCount());
         }
+
+        [When(@"I delete new file")]
+        public void WhenIDeleteNewFile()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"File exists is false")]
+        public void ThenFileExistsIsFalse()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
     }
 }

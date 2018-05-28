@@ -17,3 +17,11 @@ Scenario Outline: File not exists
 		| filePath |
 		| "d:\test3.txt"|
 
+Scenario Outline: Destroy File
+Given I have my destroyer
+When I add new file path <filePath>
+And I delete new file
+Then File exists is false
+		Examples: 
+		| filePath |
+		| "d:\test3.txt"|

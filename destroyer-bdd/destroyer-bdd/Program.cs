@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace destroyer_bdd
 {
+    public class Destroyer
+    {
+
+    }
+
     class Program
     {
         static void Main(string[] args)

@@ -18,13 +18,13 @@ namespace destroyer_bdd.Test
         public void WhenIAddNewFilePath(string p0)
         {
             dest.AddFile(p0);
-            Assert.AreEqual(1, dest.FileCount());
+            
         }
         
         [Then(@"File count is (.*)")]
         public void ThenFileCountIs(int p0)
         {
-            ScenarioContext.Current.Pending();
+            Assert.AreEqual(1, dest.FileCount());
         }
     }
 }

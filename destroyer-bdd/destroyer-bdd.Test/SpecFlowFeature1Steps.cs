@@ -30,14 +30,7 @@ namespace destroyer_bdd.Test
         [When(@"I delete new file")]
         public void WhenIDeleteNewFile()
         {
-            ScenarioContext.Current.Pending();
+            dest.DeleteFirstFile();
         }
-
-        [Then(@"File exists is false")]
-        public void ThenFileExistsIsFalse()
-        {
-            ScenarioContext.Current.Pending();
-        }
-
     }
 }

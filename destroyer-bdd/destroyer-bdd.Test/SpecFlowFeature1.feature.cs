@@ -160,7 +160,7 @@ testRunner.When(string.Format("I add new file path {0}", filePath), ((string)(nu
 #line 23
 testRunner.And("I delete new file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
-testRunner.Then("File exists is false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then(string.Format("File {0} exists is 0", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

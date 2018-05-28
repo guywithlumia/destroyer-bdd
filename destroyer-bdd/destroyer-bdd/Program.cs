@@ -23,6 +23,15 @@ namespace destroyer_bdd
         {
             return files.Count;
         }
+
+        public void DeleteFirstFile()
+        {
+            if (files.Count > 0)
+            {
+                File.Delete(files[0]);
+                files.RemoveAt(0);
+            }
+        }
     }
 
     class Program

@@ -13,9 +13,9 @@ namespace destroyer_bdd.Test
         {
             Assert.IsNotNull(dest);
         }
-        
-        [When(@"I add new file path")]
-        public void WhenIAddNewFilePath()
+
+        [When(@"I add new file path ""(.*)""")]
+        public void WhenIAddNewFilePath(string p0)
         {
             ScenarioContext.Current.Pending();
         }

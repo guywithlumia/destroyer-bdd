@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 using TechTalk.SpecFlow;
 
 namespace destroyer_bdd.Test
@@ -33,10 +34,10 @@ namespace destroyer_bdd.Test
             dest.DeleteFirstFile();
         }
 
-        [Then(@"File ""(.*)"" exists is (.*)")]
-        public void ThenFileExistsIs(string p0, int p1)
+        [Then(@"File ""(.*)"" non exists")]
+        public void ThenFileNonExists(string p0)
         {
-            ScenarioContext.Current.Pending();
+            Assert.AreEqual(false, File.Exists(p0));
         }
 
     }

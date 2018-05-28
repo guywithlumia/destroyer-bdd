@@ -160,20 +160,20 @@ testRunner.When(string.Format("I add new file path {0}", filePath), ((string)(nu
 #line 23
 testRunner.And("I delete new file", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
-testRunner.Then(string.Format("File {0} exists is 0", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then(string.Format("File {0} non exists", filePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Destroy File: \"d:\\test3.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Destroy File: \"d:\\test1.txt\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test3.txt\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test3.txt\"")]
-        public virtual void DestroyFile_DTest3_Txt()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test1.txt\"")]
+        public virtual void DestroyFile_DTest1_Txt()
         {
 #line 20
-this.DestroyFile("\"d:\\test3.txt\"", ((string[])(null)));
+this.DestroyFile("\"d:\\test1.txt\"", ((string[])(null)));
 #line hidden
         }
     }

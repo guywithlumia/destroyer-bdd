@@ -21,7 +21,7 @@ Scenario Outline: Destroy File
 Given I have my destroyer
 When I add new file path <filePath>
 And I delete new file
-Then File <filePath> exists is 0
+Then File <filePath> non exists
 		Examples: 
 		| filePath |
-		| "d:\test3.txt"|
+		| "d:\test1.txt"|

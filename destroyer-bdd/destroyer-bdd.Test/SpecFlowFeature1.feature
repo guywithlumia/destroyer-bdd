@@ -45,4 +45,4 @@ And I trash new file
 Then File <filePath> not equal original
 		Examples: 
 		| filePath |
-		| "d:\test1.txt"|
+		| "d:\test6.txt"|

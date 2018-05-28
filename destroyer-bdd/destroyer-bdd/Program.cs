@@ -46,7 +46,21 @@ namespace destroyer_bdd
 
         public void TrashFile()
         {
-            
+            if (files.Count > 0)
+            {
+                var sr = new StreamReader(files[0]);
+                var length = sr.ToString().Length;
+                sr.Close();
+                var sw = new StreamWriter(files[0]);
+                var rnd = new Random();
+                var chars = new char[length];
+
+                for (int i = 0; i < length; i++) {
+                    chars[i] = (char)rnd.Next('0', 'z');
+                }
+                sw.Write(chars);
+                sw.Close();
+            }
         }
     }
 
@@ -54,6 +68,9 @@ namespace destroyer_bdd
     {
         static void Main(string[] args)
         {
+            var dest = new Destroyer();
+            dest.AddFile("d:\test6.txt");
+            dest.TrashFile();
         }
     }
 }

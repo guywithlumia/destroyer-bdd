@@ -50,7 +50,7 @@ namespace destroyer_bdd.Test
         [When(@"I make copy file ""(.*)""")]
         public void WhenIMakeCopyFile(string p0)
         {
-            File.Copy(p0, p0 + ".orig");
+            File.Copy(p0, p0 + ".orig",true);
         }
 
         [When(@"I trash new file")]

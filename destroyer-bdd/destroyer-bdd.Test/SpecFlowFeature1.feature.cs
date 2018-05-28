@@ -231,14 +231,14 @@ testRunner.Then(string.Format("File {0} not equal original", filePath), ((string
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Trash File: \"d:\\test1.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Trash File: \"d:\\test6.txt\"")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "SpecFlowFeature1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test1.txt\"")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test1.txt\"")]
-        public virtual void TrashFile_DTest1_Txt()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "\"d:\\test6.txt\"")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:filePath", "\"d:\\test6.txt\"")]
+        public virtual void TrashFile_DTest6_Txt()
         {
 #line 40
-this.TrashFile("\"d:\\test1.txt\"", ((string[])(null)));
+this.TrashFile("\"d:\\test6.txt\"", ((string[])(null)));
 #line hidden
         }
     }
